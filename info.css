@@ -1,5 +1,11 @@
-header {
+
+
+header, p, body {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 
+}
+
+#birthMonthVar, #birthDayVar, #birthYearVar, #currentMonthVar, #currentDayVar, #currentYearVar {
+    font-family:monospace;
 }
