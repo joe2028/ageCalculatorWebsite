@@ -1,26 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <header>
         <title>Age Calculator</title>
         <h1>Age Calculator</h1>
         <h3>by <a href="https://github.com/joe2028">Joe Bennett</a></h3>
         <link rel="stylesheet", href="info.css">
-        <script type="text/javascript" src="info.js"></script>
+        
 
     </header>
 
     <body>
+        <form action="/age.html"></form>
         <input id="birthMonthVar", placeholder="Birth Month">
         <input id="birthDayVar", placeholder="Birth Day">
         <input id="birthYearVar", placeholder="Birth Year"><br><br>
         <input id="currentMonthVar", placeholder="Current Month">
         <input id="currentDayVar", placeholder="Current Day">
         <input id="currentYearVar", placeholder="Current Year"><br>
-        <button id="currentSubmitVar", onclick="submitFunc">Submit</button><br><br>
+        <input id="currentSubmitVar" onclick="submitFunction()" type="submit"></input><br><br>
 
-        <p id="submissionsVar"></p>
+        <span id="submissionsVar">Fund me here</span>
     </body>
 
 
-
+    <script type="text/javascript" src="info.js"></script>
 </html>

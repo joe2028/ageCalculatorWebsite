@@ -13,12 +13,13 @@ var currentYear = document.getElementById("birthYearVar");
 
 //Other
 var currentSubmit = document.getElementById("currentSubmitVar");
-
-
-//Submit Button Function
-function submitFunc(){
-    const averageDaysAlive = ((currentYear - birthYear) * 365 + 
+var submission = document.getElementById("submissionVar")
+const averageDaysAlive = ((currentYear - birthYear) * 365 + 
     (currentMonth - birthMonth) * 30 + (currentDay - birthDay))
-    var submission = document.getElementById("submissionVar").textContent = "You have lived for " + averageDaysAlive + " days!";
+
+    //Submit Button Function
+function submitFunction(){
+    
+    submission.innerHTML = "You have lived for ";
 
 }
