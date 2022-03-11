@@ -5,23 +5,20 @@
         <h1>Age Calculator</h1>
         <h3>by <a href="https://github.com/joe2028">Joe Bennett</a></h3>
         <link rel="stylesheet", href="info.css">
-        
+        <script type="text/javascript" src="info.js"></script>
 
     </header>
 
     <body>
-        <form action="/age.html"></form>
-        <input id="birthMonthVar", placeholder="Birth Month">
-        <input id="birthDayVar", placeholder="Birth Day">
-        <input id="birthYearVar", placeholder="Birth Year"><br><br>
-        <input id="currentMonthVar", placeholder="Current Month">
-        <input id="currentDayVar", placeholder="Current Day">
-        <input id="currentYearVar", placeholder="Current Year"><br>
-        <input id="currentSubmitVar" onclick="submitFunction()" type="submit"></input><br><br>
-
-        <span id="submissionsVar">Fund me here</span>
+        <div class="container">
+                <input id="birthMonthVar", placeholder="Birth Month", autocomplete="off">
+                <input id="birthDayVar", placeholder="Birth Day">
+                <input id="birthYearVar", placeholder="Birth Year"><br><br>
+                <input id="currentMonthVar", placeholder="Current Month">
+                <input id="currentDayVar", placeholder="Current Day">
+                <input id="currentYearVar", placeholder="Current Year"><br>
+                <input id="currentSubmitVar" type="submit" onclick="sun()"></input><br><br>
+        </div>
+        <p id="submissionsVar"></p>   
     </body>
-
-
-    <script type="text/javascript" src="info.js"></script>
 </html>
