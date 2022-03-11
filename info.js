@@ -18,7 +18,9 @@ function sun(){
     var Submit = document.getElementById("currentSubmitVar");
     const averageDaysAlive = ((currentYear - birthYear) * 365 + 
     (currentMonth - birthMonth) * 30 + (currentDay - birthDay));
+    const hoursAlive = averageDaysAlive * 24;
+    const secondsAlive = hoursAlive * 60
     document.getElementById("submissionsVar").innerHTML = "You have lived for " + 
-    averageDaysAlive + " days.";
+    averageDaysAlive + " days, " + hoursAlive + " hours, and " + secondsAlive + " seconds.";
 
 }
